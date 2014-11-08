@@ -165,6 +165,9 @@ $(call inherit-product-if-exists, external/naver-fonts/fonts.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/oct/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/oct/overlay/common
 
+# OctOS overlay script
+$(shell $(LOCAL_PATH)/oct_overlay)
+
 # bin
 PRODUCT_COPY_FILES += \
     vendor/oct/prebuilt/common/bin/sysinit:system/bin/sysinit

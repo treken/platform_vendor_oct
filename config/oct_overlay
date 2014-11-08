@@ -1,0 +1,15 @@
+#!/bin/sh
+# Copyright (C) 2014 Team OctOS
+#
+# OctOS overlay script created by Treken for copying files to specified directories
+#
+# For recursive directories a permisions flag "-p" must be used
+# For overwriting files the force flag "-f" must be used
+#
+# Disclaimer:
+# We are not responsible if you edit this script and use it for otherthings
+
+# OmniSwitch overlays
+cp -f vendor/oct/overlay/common/packages/apps/OmniSwitch/AndroidManifest.xml packages/apps/OmniSwitch/AndroidManifest.xml
+mkdir -p packages/apps/OmniSwitch/res/values-holodark
+cp vendor/oct/overlay/common/packages/apps/OmniSwitch/res/values-holodark/styles.xml packages/apps/OmniSwitch/res/values-holodark/styles.xml
