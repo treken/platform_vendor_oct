@@ -90,7 +90,6 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     PhotoTable \
     SoundRecorder \
-    Torch \
     VisualizationWallpapers \
     VoicePlus \
     libemoji
