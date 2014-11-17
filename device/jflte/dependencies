@@ -1,0 +1,10 @@
+#!/bin/sh
+
+target=".repo/local_manifests/"
+if [ -e "$target/samsung.xml" ]  # The "-e" test for existence
+then
+    echo "Vendor manifest already exists!"
+else
+    cp vendor/oct/dependencies/samsung/samsung.xml .repo/local_manifests/samsung.xml
+fi
+exit
