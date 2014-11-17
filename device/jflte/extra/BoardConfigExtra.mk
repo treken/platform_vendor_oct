@@ -27,7 +27,10 @@ include device/samsung/jf-common/BoardConfigCommon.mk
 include vendor/samsung/jflte/BoardConfigVendor.mk
 
 # inherit from the proprietary version
--include vendor/oct/device/jflte/Apps2SD/BoardConfigVendor.mk
+-include vendor/oct/device/jflte/extra/BoardConfigExtra.mk
+
+# Add vendor props
+$(call shell $(LOCAL_PATH)/oct_overlay)
 
 # External apps on SD
 TARGET_EXTERNAL_APPS = sdcard1
