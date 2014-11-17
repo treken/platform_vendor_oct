@@ -1,0 +1,13 @@
+#!/bin/sh
+# Copyright (C) 2014 Team OctOS
+#
+# OctOS overlay script created by Treken for copying files to specified directories
+#
+# For recursive directories a permisions flag "-p" must be used
+# For overwriting files the force flag "-f" must be used
+#
+# Disclaimer:
+# We are not responsible if you edit this script and use it for otherthings
+
+# Overwrite jf-common overlay for storage list
+cp -f vendor/oct/device/jflte/overlay/frameworks/base/core/res/res/xml/storage_list.xml device/samsung/jf-common/overlay/frameworks/base/core/res/res/xml/storage_list.xml
