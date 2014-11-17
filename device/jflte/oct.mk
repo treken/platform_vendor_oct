@@ -1,4 +1,4 @@
-# OctOS overlay script
+# Fetch dependencies
 $(shell vendor/oct/dependencies/$(TARGET_PRODUCT)/getdependencies)
 
 # Inherit full device make
