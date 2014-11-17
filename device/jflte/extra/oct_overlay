@@ -11,7 +11,3 @@
 
 # Overwrite jf-common overlay for storage list
 cp -f vendor/oct/device/jflte/overlay/frameworks/base/core/res/res/xml/storage_list.xml device/samsung/jf-common/overlay/frameworks/base/core/res/res/xml/storage_list.xml
-
-# Include vendor props
-cp -f vendor/oct/device/vendor/samsung.xml .repo/local_manifests/samsung.xml
-repo sync proprietary_vendor_samsung
