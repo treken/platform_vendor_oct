@@ -8,4 +8,7 @@ $(call inherit-product, vendor/oct/config/nfc_enhanced.mk)
 # Inherit some common oct stuff.
 $(call inherit-product, vendor/oct/config/common_phone.mk)
 
+# Build TWRP recovery
+include $(call all-makefiles-under,vendor/oct/config/twrp)
+
 PRODUCT_NAME := oct_jflte

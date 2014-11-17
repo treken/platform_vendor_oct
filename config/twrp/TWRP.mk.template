@@ -1,0 +1,23 @@
+# Copyright (C) 2014 Team OctOS
+# By Teken for Team OctOS
+#
+#
+# This file sets variables needed by TWRP recovery
+# It should be used conditionally as needed for building TWRP for your device.
+#
+# Add the following line to your device specific oct.mk file removing the hash from the makefile call:
+
+# Build TWRP recovery
+# include $(call all-makefiles-under,vendor/oct/config/twrp)
+
+# Create your specific device directory in oct/config/twrp and place this TWRP.mk file in it
+# after you have modified it for your device.
+
+# Include TWRP makefile
+-include $(LOCAL_PATH)/$(TARGET_DEVICE)/TWRP.mk
+
+# TWRP2 support
+RECOVERY_VARIANT := twrp
+DEVICE_RESOLUTION := 1080x1920
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_DEVICE_MODULES += twrp.fstab
